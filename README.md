@@ -18,9 +18,9 @@ This project demonstrates fundamental Golang concepts with detailed comments for
 │   ├── functions.go       # Comprehensive function concepts
 │   └── functions_test.go  # Function tests
 └── cmd/                    # Executable programs
-    ├── basics/
+    ├── 01-basics/
     │   └── main.go        # Demo runner for basics
-    └── functions/
+    └── 02-functions/
         └── main.go        # Demo runner for functions
 ```
 
@@ -58,10 +58,10 @@ Located in the `functions/` directory, this module covers all aspects of functio
 go run main.go
 
 # Run basic concepts demo
-go run cmd/basics/main.go
+go run cmd/01-basics/main.go
 
 # Run functions demo
-go run cmd/functions/main.go
+go run cmd/02-functions/main.go
 ```
 
 ### Running Tests
@@ -79,8 +79,8 @@ go test -v ./basics
 ## Learning Path
 
 1. **Start with the overview**: Run `go run main.go` to understand the project structure
-2. **Learn the basics**: Run `go run cmd/basics/main.go` to see fundamental concepts in action
-3. **Explore functions**: Run `go run cmd/functions/main.go` to understand Go's function features
+2. **Learn the basics**: Run `go run cmd/01-basics/main.go` to see fundamental concepts in action
+3. **Explore functions**: Run `go run cmd/02-functions/main.go` to understand Go's function features
 4. **Study the code**: Read through the well-commented source files:
    - Start with `basics/variables.go` for variable declarations
    - Move to `basics/operators.go` for arithmetic operations
