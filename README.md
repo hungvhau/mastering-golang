@@ -17,11 +17,15 @@ This project demonstrates fundamental Golang concepts with detailed comments for
 ├── functions/              # Functions package
 │   ├── functions.go       # Comprehensive function concepts
 │   └── functions_test.go  # Function tests
+├── loops/                  # Loops and control flow package
+│   └── loops.go           # Comprehensive loop concepts
 └── cmd/                    # Executable programs
     ├── 01-basics/
     │   └── main.go        # Demo runner for basics
-    └── 02-functions/
-        └── main.go        # Demo runner for functions
+    ├── 02-functions/
+    │   └── main.go        # Demo runner for functions
+    └── 03-loops/
+        └── main.go        # Demo runner for loops and control flow
 ```
 
 ## Learning Modules
@@ -50,6 +54,19 @@ Located in the `functions/` directory, this module covers all aspects of functio
 - **Recursion**: Functions that call themselves
 - **Methods**: Functions with receivers attached to types
 
+### 3. Loops Module
+Located in the `loops/` directory, this module covers Go's versatile for loop and control flow:
+
+- **Basic For Loop**: Traditional C-style loops with initialization, condition, and post statement
+- **While-Style Loops**: Using for loops without init and post statements
+- **Infinite Loops**: Creating and breaking out of endless loops
+- **Break and Continue**: Controlling loop execution flow
+- **Range Keyword**: Iterating over arrays, slices, maps, strings, and channels
+- **Nested Loops**: Working with multi-dimensional data structures
+- **Labeled Break/Continue**: Controlling outer loops from inner loops
+- **Loop Patterns**: Common patterns like filtering, transformation, and accumulation
+- **Performance Considerations**: Writing efficient loops with pre-allocation and caching
+
 ## Running the Examples
 
 ### Quick Start
@@ -62,6 +79,9 @@ go run cmd/01-basics/main.go
 
 # Run functions demo
 go run cmd/02-functions/main.go
+
+# Run loops and control flow demo
+go run cmd/03-loops/main.go
 ```
 
 ### Running Tests
@@ -81,13 +101,15 @@ go test -v ./basics
 1. **Start with the overview**: Run `go run main.go` to understand the project structure
 2. **Learn the basics**: Run `go run cmd/01-basics/main.go` to see fundamental concepts in action
 3. **Explore functions**: Run `go run cmd/02-functions/main.go` to understand Go's function features
-4. **Study the code**: Read through the well-commented source files:
+4. **Master loops**: Run `go run cmd/03-loops/main.go` to learn Go's powerful for loop and control flow
+5. **Study the code**: Read through the well-commented source files:
    - Start with `basics/variables.go` for variable declarations
    - Move to `basics/operators.go` for arithmetic operations
    - Study `basics/conditionals.go` for control flow
    - Deep dive into `functions/functions.go` for comprehensive function concepts
-5. **Run the tests**: Use `go test -v ./basics` to see how the functions are tested
-6. **Experiment**: Modify the code and create your own examples
+   - Master `loops/loops.go` for all loop patterns and control flow techniques
+6. **Run the tests**: Use `go test -v ./basics` to see how the functions are tested
+7. **Experiment**: Modify the code and create your own examples
 
 ## Go Best Practices Demonstrated
 
