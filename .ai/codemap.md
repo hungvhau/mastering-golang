@@ -29,10 +29,19 @@
   - Break/continue
   - Nested loops
 
+### Collections Module (`collections/`)
+- **All Collection Types**: `collections.go` - Arrays, slices, and maps
+  - Fixed-size arrays
+  - Dynamic slices
+  - Hash maps
+  - Operations and patterns
+  - Performance comparisons
+
 ## 🚀 Demo Runners (`cmd/`)
 1. **Basics Demo**: `cmd/01-basics/main.go` - Run with `go run cmd/01-basics/main.go`
 2. **Functions Demo**: `cmd/02-functions/main.go` - Run with `go run cmd/02-functions/main.go`
 3. **Loops Demo**: `cmd/03-loops/main.go` - Run with `go run cmd/03-loops/main.go`
+4. **Collections Demo**: `cmd/04-collections/main.go` - Run with `go run cmd/04-collections/main.go`
 
 ## 🔍 Key Patterns
 - **Educational Style**: Every function has detailed comments explaining concepts

@@ -3,7 +3,7 @@
 ## 🎯 Adding New Concepts
 
 ### Add a New Topic to Existing Module
-1. **Identify the module**: basics/, functions/, or loops/
+1. **Identify the module**: basics/, functions/, loops/, or collections/
 2. **Add to existing file** or create new file if topic is large
 3. **Follow documentation pattern**:
    ```go
@@ -21,11 +21,43 @@
 1. **Create module directory**: e.g., `structs/`
 2. **Create main teaching file**: e.g., `structs/structs.go`
 3. **Create test file**: e.g., `structs/structs_test.go`
-4. **Create demo runner**: `cmd/04-structs/main.go`
+4. **Create demo runner**: `cmd/05-structs/main.go`
 5. **Update**:
    - `main.go` with new module info
    - `README.md` with module description
    - `.ai/context.json` with module metadata
+
+### Working with Collections Examples
+1. **Arrays**: Show fixed vs dynamic sizing needs
+   ```go
+   // Fixed size when size is known
+   rgb := [3]byte{255, 0, 0}  // Red color
+   
+   // Show value semantics
+   copy := rgb  // Full copy made
+   ```
+
+2. **Slices**: Demonstrate growth and operations
+   ```go
+   // Show capacity growth
+   data := make([]int, 0, 2)
+   data = append(data, 1, 2, 3) // Capacity doubles
+   
+   // Common operations
+   filtered := data[:0]  // Reuse backing array
+   ```
+
+3. **Maps**: Show practical use cases
+   ```go
+   // Counting pattern
+   counts := make(map[string]int)
+   counts[word]++
+   
+   // Caching pattern
+   if val, ok := cache[key]; ok {
+       return val  // Cache hit
+   }
+   ```
 
 ## 📝 Documentation Standards
 
@@ -78,6 +110,7 @@ go run main.go                    # See overview
 go run cmd/01-basics/main.go     # Run basics
 go run cmd/02-functions/main.go  # Run functions
 go run cmd/03-loops/main.go      # Run loops
+go run cmd/04-collections/main.go # Run collections
 
 # Run tests
 go test ./...                     # All tests

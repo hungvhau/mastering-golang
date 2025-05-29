@@ -19,13 +19,17 @@ This project demonstrates fundamental Golang concepts with detailed comments for
 │   └── functions_test.go  # Function tests
 ├── loops/                  # Loops and control flow package
 │   └── loops.go           # Comprehensive loop concepts
+├── collections/            # Collections package
+│   └── collections.go     # Arrays, slices, and maps
 └── cmd/                    # Executable programs
     ├── 01-basics/
     │   └── main.go        # Demo runner for basics
     ├── 02-functions/
     │   └── main.go        # Demo runner for functions
-    └── 03-loops/
-        └── main.go        # Demo runner for loops and control flow
+    ├── 03-loops/
+    │   └── main.go        # Demo runner for loops and control flow
+    └── 04-collections/
+        └── main.go        # Demo runner for collections
 ```
 
 ## Learning Modules
@@ -67,6 +71,25 @@ Located in the `loops/` directory, this module covers Go's versatile for loop an
 - **Loop Patterns**: Common patterns like filtering, transformation, and accumulation
 - **Performance Considerations**: Writing efficient loops with pre-allocation and caching
 
+### 4. Collections Module
+Located in the `collections/` directory, this module covers Go's built-in collection types:
+
+- **Arrays**: Fixed-size sequences with value semantics
+  - Declaration methods (zero-initialized, literal, auto-sized)
+  - Multi-dimensional arrays and array operations
+  - Array comparison and performance considerations
+- **Slices**: Dynamic arrays with reference semantics
+  - Creating slices (nil, make, literal, from arrays)
+  - Slice operations (append, copy, insert, delete)
+  - Capacity management and growth patterns
+  - Common patterns (stacks, queues, filtering)
+- **Maps**: Hash tables for key-value associations
+  - Declaration and initialization
+  - CRUD operations (Create, Read, Update, Delete)
+  - Different key types and nested maps
+  - Common patterns (caching, counting, grouping, sets)
+- **Collection Comparison**: When to use arrays vs slices vs maps
+
 ## Running the Examples
 
 ### Quick Start
@@ -82,6 +105,9 @@ go run cmd/02-functions/main.go
 
 # Run loops and control flow demo
 go run cmd/03-loops/main.go
+
+# Run collections demo
+go run cmd/04-collections/main.go
 ```
 
 ### Running Tests
@@ -102,14 +128,16 @@ go test -v ./basics
 2. **Learn the basics**: Run `go run cmd/01-basics/main.go` to see fundamental concepts in action
 3. **Explore functions**: Run `go run cmd/02-functions/main.go` to understand Go's function features
 4. **Master loops**: Run `go run cmd/03-loops/main.go` to learn Go's powerful for loop and control flow
-5. **Study the code**: Read through the well-commented source files:
+5. **Understand collections**: Run `go run cmd/04-collections/main.go` to work with arrays, slices, and maps
+6. **Study the code**: Read through the well-commented source files:
    - Start with `basics/variables.go` for variable declarations
    - Move to `basics/operators.go` for arithmetic operations
    - Study `basics/conditionals.go` for control flow
    - Deep dive into `functions/functions.go` for comprehensive function concepts
    - Master `loops/loops.go` for all loop patterns and control flow techniques
-6. **Run the tests**: Use `go test -v ./basics` to see how the functions are tested
-7. **Experiment**: Modify the code and create your own examples
+   - Explore `collections/collections.go` for data structure fundamentals
+7. **Run the tests**: Use `go test -v ./basics` to see how the functions are tested
+8. **Experiment**: Modify the code and create your own examples
 
 ## Go Best Practices Demonstrated
 

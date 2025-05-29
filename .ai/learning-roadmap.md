@@ -17,6 +17,11 @@ graph TD
     H --> L[Higher-Order Functions]
     D --> M[Switch Statements]
     I --> N[Nested Loops]
+    B --> O[Arrays]
+    O --> P[Slices]
+    P --> Q[Maps]
+    J --> P[Slices]
+    J --> Q[Maps]
 ```
 
 ## 🎓 Learning Progression
@@ -88,6 +93,29 @@ graph TD
     - Accumulation patterns
     - Performance optimizations
 
+### Stage 4: Collections (Collections Module)
+**File**: `collections/collections.go`
+
+11. **Arrays**
+    - Fixed-size declaration
+    - Value semantics
+    - Multi-dimensional arrays
+    - Array comparison
+
+12. **Slices**
+    - Dynamic sizing
+    - Reference semantics
+    - Append and capacity
+    - Slice operations (copy, insert, delete)
+    - Common patterns (stacks, queues)
+
+13. **Maps**
+    - Key-value pairs
+    - Hash table implementation
+    - CRUD operations
+    - Map patterns (caching, counting, grouping)
+    - Using maps as sets
+
 ## 🔗 Concept Dependencies
 
 | Concept | Requires | Enables |
@@ -100,6 +128,9 @@ graph TD
 | Loops | Conditionals | Range, Patterns |
 | Closures | Functions, Scope | Higher-order functions |
 | Range | Loops | Idiomatic Go iteration |
+| Arrays | Data Types | Slices, Fixed collections |
+| Slices | Arrays, Range | Dynamic collections |
+| Maps | Data Types, Range | Associations, Caching |
 
 ## 💡 AI Guidance
 
