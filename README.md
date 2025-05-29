@@ -149,6 +149,51 @@ This is a learning project. Feel free to:
 - Improve documentation and comments
 - Add more comprehensive tests
 
+## AI-Friendly Documentation
+
+This project includes special documentation to help AI assistants understand and expand the codebase efficiently:
+
+### 🤖 AI Configuration Files
+- **`.ai/context.json`** - Machine-readable project structure and conventions
+- **`.ai/codemap.md`** - Quick navigation guide to all modules
+- **`.ai/learning-roadmap.md`** - Concept dependencies and progression
+- **`.ai/common-tasks.md`** - Patterns for common modifications
+- **`.ai-prompt.md`** - Universal context for any AI tool
+
+### 📝 Prompt Templates
+- **`.ai/prompt-template.md`** - Detailed guide for writing effective prompts
+- **`.ai/QUICK_PROMPT_GUIDE.md`** - Quick reference with copy-paste templates
+- **`.ai/BOOTSTRAP.md`** - How to ensure AI reads the context files
+
+### 🚀 Starting a New AI Session
+
+**Important**: AI assistants don't automatically know about these files! Start with:
+
+```
+I'm working on the mastering-golang educational project. 
+Please read .ai/context.json for project structure and .ai-prompt.md for guidelines.
+```
+
+Or use the shorter prefix for any prompt:
+```
+[mastering-golang edu project, see .ai/ docs] Add pointers to basics module...
+```
+
+### Example Prompt for Adding Content:
+```
+[mastering-golang edu project, see .ai/ docs]
+Add pointers to basics module after learners understand functions.
+Show pointer declaration, dereferencing, and passing pointers to functions.
+Include the classic "swap values" example and explain memory efficiency.
+Focus on when to use pointers vs values.
+```
+
+These files help AI assistants:
+- Understand the project structure instantly
+- Maintain educational consistency
+- Follow established patterns
+- Add content in the correct progression
+
 ## Next Steps
 
 After mastering these basics, consider exploring:
